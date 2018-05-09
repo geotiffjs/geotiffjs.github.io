@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/landing-page.min.css">
+  <link rel="stylesheet" href="theme/css/landing-page.min.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block h-100" src="images/cog-explorer.png" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h1 class="display-3">geotiff.js</h1>
           <p>Welcome to the geotiff.js project page.</p>
           <p>
@@ -43,8 +43,8 @@
           </p>
           <p>
             geotiff.js aims to support as many TIFF features as possible, including various image compression methods,
-            geographical information, internal tiling, pixel or band interleavement, automatic transformation from 
-            several color spaces to RGB and much more.
+            geographical information, internal tiling, pixel or band interleaving, automatic transformation from
+            several color spaces to RGB, and much more.
           </p>
           <p>
             The library is fully open source (MIT), and contributions are very welcome.
@@ -53,7 +53,7 @@
       </div>
       <div class="carousel-item">
         <img class="d-block h-100" src="images/sentinel2-ndvi.png" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption">
           <h1 class="display-3">geotiff.js</h1>
           <p>Welcome to the geotiff.js project page.</p>
           <p>
@@ -62,8 +62,8 @@
           </p>
           <p>
             geotiff.js aims to support as many TIFF features as possible, including various image compression methods,
-            geographical information, internal tiling, pixel or band interleavement, automatic transformation from 
-            several color spaces to RGB and much more.
+            geographical information, internal tiling, pixel or band interleaving, automatic transformation from
+            several color spaces to RGB, and much more.
           </p>
           <p>
             The library is fully open source (MIT), and contributions are very welcome.
@@ -81,14 +81,29 @@
     </a>
   </div>
 
+  <style>
+    @media (min-width: 34em) {
+      .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+      }
+    }
+    @media (min-width: 48em) {
+      .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+      }
+    }
+  </style>
+
   <section id="app" class="py-5">
     <div class="container">
       <div class="row">
-        <!-- <div class="text-center"> -->
-          <h2 class="text-center">Applications using geotiff.js</h2>
-        <!-- </div> -->
-        <div class="card-deck">
-          <div class="card mb-3">
+        <h2 class="m-3">Applications using geotiff.js</h2>
+        <div class="card-columns">
+          <div class="card m-3">
             <a href="http://geotiff.io">
               <img class="card-img-top" src="images/geotiffio.png" alt="geotiff.io">
             </a>
@@ -98,7 +113,7 @@
             </div>
           </div>
 
-          <div class="card mb-3">
+          <div class="card m-3">
             <a href="https://geotiffjs.github.io/cog-explorer/">
               <img class="card-img-top" src="images/cog-explorer.png" alt="Card image cap">
             </a>
@@ -117,26 +132,22 @@
   <section id="info" class="bg-dark py-5">
     <div class="container">
       <div class="row">
-        <div class="text-center text-light">
-          <h2 class="text-center">Further information</h2>
-        </div>
+        <h2 class="m-3 text-light">Further information</h2>
         <div class="card-columns">
-          <div class="card mb-3">
+          <div class="card m-3">
             <div class="card-body">
               <h5 class="card-title">geotiff.js project page</h5>
               <p class="card-text">This is the GitHub project page for geotiff.js, where you can find all the relevant information, request features,
                 or report bugs.</p>
               <p>
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <a href="https://github.com/geotiffjs/geotiff.js/" class="btn btn-secondary"><i class="fab fa-github"></i> Repository</a>
-                  <a href="https://geotiffjs.github.io/geotiff.js/" class="btn btn-secondary"><i class="fas fa-book"></i> API-Docs</a>
-                  <a href="https://github.com/geotiffjs/geotiff.js/issues" class="btn btn-secondary">Issues</a>
-                </div>
+                <a href="https://github.com/geotiffjs/geotiff.js/" class="btn btn-secondary mb-1"><i class="fab fa-github"></i> Repository</a>
+                <a href="https://geotiffjs.github.io/geotiff.js/" class="btn btn-secondary mb-1"><i class="fas fa-book"></i> API-Docs</a>
+                <a href="https://github.com/geotiffjs/geotiff.js/issues" class="btn btn-secondary mb-1">Issues</a>
               </p>
             </div>
           </div>
-      
-          <div class="card mb-3">
+
+          <div class="card m-3">
             <img class="card-img-top" src="images/cog-explorer.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">COG-Explorer project page</h5>
@@ -147,8 +158,8 @@
                 <a class="btn btn-primary btn-lg" href="https://github.com/geotiffjs/cog-explorer" role="button">Show project &raquo;</a>              </p>
             </div>
           </div>
-      
-          <div class="card mb-3">
+
+          <div class="card m-3">
             <a href="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/" role="button">
               <img class="card-img-top" src="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/data/background.png" alt="Card image cap">
             </a>
@@ -160,14 +171,14 @@
             </div>
           </div>
 
-          <div class="card mb-3">
+          <div class="card m-3">
             <div class="card-body">
               <a href="https://eox.at/2018/01/visualizing-geotiff-tiles-with-openlayers/"><img class="card-img-top" src="https://eox.at/wp-content/uploads/2018/01/data.eox_.at_geotiff.js-blog_04_multiband_10_blog_demo.htmScreenshot-700x394.png" alt="Card image cap"></a>
               <a href="https://eox.at/2018/01/visualizing-geotiff-tiles-with-openlayers/"><h5 class="card-title">Blog post: Visualizing GeoTIFF Tiles with OpenLayers</h5></a>
             </div>
           </div>
 
-          <div class="card mb-3">
+          <div class="card m-3">
             <div class="card-body">
               <a href="https://eox.at/2016/02/visualizing-raster-data/">
                 <img class="card-img-top" src="images/visualizing-raster-data.png"
