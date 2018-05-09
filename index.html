@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="css/creative.min.css"> -->
   <link rel="stylesheet" href="css/landing-page.min.css">
   <style>
     section {
@@ -77,27 +76,6 @@
           </p>
         </div>
       </div>
-      <!-- <div class="carousel-item">
-        <img class="d-block h-100" src="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/data/background.png" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block text-dark">
-          <h1 class="display-3">geotiff.js</h1>
-          <p>Welcome to the geotiff.js project page.</p>
-          <p>
-            geotiff.js is a small library to parse TIFF files for visualization or analysis. It is written in pure JavaScript, and is
-            usable in both the browser and node.js applications.
-          </p>
-          <p>
-            geotiff.js aims to support as many TIFF features as possible, including various image compression methods, geographical information,
-            internal tiling, pixel or band interleavement, automatic transformation from several color spaces to RGB and much more.
-          </p>
-          <p>
-            The library is fully open source (MIT), and contributions are very welcome.
-          </p>
-        </div>
-      </div> -->
-      <!-- <div class="carousel-item">
-        <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
-      </div> -->
     </div>
     <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,25 +86,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <!-- <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-3">geotiff.js</h1>
-      <p>Welcome to the geotiff.js project page.</p>
-      <p>
-        geotiff.js is a small library to parse TIFF files for visualization or analysis. It is written in pure
-        JavaScript, and is usable in both the browser and node.js applications.
-      </p>
-      <p>
-        geotiff.js aims to support as many TIFF features as possible, including various image compression methods,
-        geographical information, internal tiling, pixel or band interleavement, automatic transformation from 
-        several color spaces to RGB and much more.
-      </p>
-      <p>
-        The library is fully open source (MIT), and contributions are very welcome.
-      </p>
-    </div>
-  </div> -->
-  <!-- <hr> -->
 
   <section id="app">
     <div class="container">
@@ -156,39 +115,29 @@
               </p>
             </div>
           </div>
-
-          <!-- <div class="card mb-3">
-            <img class="card-img-top" src="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/data/background.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Foss4G 2017 presentation for geotiff.js</h5>
-              <p class="card-text">
-                This application built with geotiff.js highlights the capabilities of the libray when dealing with cloud optimized GeoTIFFs.
-              </p>
-              <p>
-                <a class="btn btn-primary btn-lg" href="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/" role="button">Learn more &raquo;</a>
-              </p>
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
   </section>
-    
+
   <section id="info" class="bg-dark">
     <div class="container">
       <div class="row">
         <div class="text-center text-light">
           <h2 class="text-center">Further information</h2>
         </div>
-        <div class="card-deck">
+        <div class="card-columns">
           <div class="card mb-3">
             <div class="card-body">
               <h5 class="card-title">geotiff.js project page</h5>
               <p class="card-text">This is the GitHub project page for geotiff.js, where you can find all the relevant information, request features,
                 or report bugs.</p>
               <p>
-                <a class="btn btn-primary btn-lg" href="https://github.com/geotiffjs/geotiff.js/" role="button">Show project &raquo;</a>
-                <a class="btn btn-secondary btn-lg" href="https://geotiffjs.github.io/geotiff.js/">API Documentation</a>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <a href="https://github.com/geotiffjs/geotiff.js/" class="btn btn-secondary"><i class="fab fa-github"></i> Repository</a>
+                  <a href="https://geotiffjs.github.io/geotiff.js/" class="btn btn-secondary"><i class="fas fa-book"></i> API-Docs</a>
+                  <a href="https://github.com/geotiffjs/geotiff.js/issues" class="btn btn-secondary">Issues</a>
+                </div>
               </p>
             </div>
           </div>
@@ -208,16 +157,32 @@
           <div class="card mb-3">
             <img class="card-img-top" src="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/data/background.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">FOSS4G 2016 presentation</h5>
+              <a href="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/" role="button"><h5 class="card-title">FOSS4G 2016 presentation</h5></a>
               <p class="card-text">
                 geotiff.js and plotty.js - Visualizing Scientific Raster Data in the Browser
               </p>
-              <p>
-                <a class="btn btn-primary btn-lg" href="https://constantinius.github.io/foss4g-geotiff.js-plotty.js/#/" role="button">Show presentation &raquo;</a>
-              </p>
             </div>
           </div>
-        </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <a href="https://eox.at/2018/01/visualizing-geotiff-tiles-with-openlayers/"><img class="card-img-top" src="https://eox.at/wp-content/uploads/2018/01/data.eox_.at_geotiff.js-blog_04_multiband_10_blog_demo.htmScreenshot-700x394.png" alt="Card image cap"></a>
+              <a href="https://eox.at/2018/01/visualizing-geotiff-tiles-with-openlayers/"><h5 class="card-title">Blog post: Visualizing GeoTIFF Tiles with OpenLayers</h5></a>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <a href="https://eox.at/2016/02/visualizing-raster-data/">
+                <img class="card-img-top" src="images/visualizing-raster-data.png"
+                  alt="Card image cap">
+              </a>
+              <a href="https://eox.at/2016/02/visualizing-raster-data/">
+                <h5 class="card-title">Blog post: Visualizing Raster Data</h5>
+              </a>
+            </div>
+          </div>
+        </div> <!-- /card-columns -->
       </div>
     </div><!-- /container -->
   </section>
