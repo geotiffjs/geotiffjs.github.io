@@ -1,0 +1,44 @@
+// Final overrides for this template
+.text-highlight{
+  color: $primary;
+}
+
+.masthead {
+  height: 100vh;
+  background: url('../images/cog-explorer.png');
+}
+
+hr.spacer-dark, hr.spacer-light {
+    max-width: 15rem;
+    padding: 0;
+    text-align: center;
+    border: none;
+    border-top: solid .25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+hr.spacer-dark {
+    border-color: #2c3e50;
+}
+
+.card-link {
+  text-decoration: none;
+  padding: 0;
+}
+
+.card {
+  padding: 5px;
+}
+
+.card, .card h5, .card p {
+  transition: all 0.15s ease-in-out;
+}
+
+.card:hover {
+  background: $gray-800;
+}
+
+.card:hover h5, .card:hover p {
+  color: $white !important;
+}
