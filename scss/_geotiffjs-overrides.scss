@@ -6,6 +6,8 @@
 .masthead {
   height: 100vh;
   background: url('../images/cog-explorer.png');
+  background-size: cover;
+  max-height: 1006px !important;
 }
 
 hr.spacer-dark, hr.spacer-light {
@@ -41,4 +43,20 @@ hr.spacer-dark {
 
 .card:hover h5, .card:hover p {
   color: $white !important;
+}
+
+
+@media (min-width: 34em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (min-width: 48em) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
 }
